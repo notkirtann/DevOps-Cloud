@@ -1,9 +1,8 @@
 import express from 'express';
-import type {Request,Response} from 'express'
 
 const app = express()
 
-app.get('/',(req:Request,res:Response)=>{
+app.get('/',(req,res)=>{
     console.log(`server is accessed on host machine`);
     res.send(`server is running fuckin fine bruhh`);
 })
